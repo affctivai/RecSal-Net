@@ -13,4 +13,4 @@ It is a recursive transformer network that combines a transformer-based encoder 
 Fig.1 RecSal-Net structure
 </div>
 
-The overall architecture of RecSal-Net. (a) The RecSal-Net model, including the transformer-based encoder, recursive blocks, and decoder. (b) The recursive block, which applies recursive processing.
+The overall architecture of RecSal-Net. (a) The RecSal-Net model, including the transformer-based encoder, recursive blocks, and decoder. (b) The recursive block, which iteratively refines multi-scale spatiotemporal features.
