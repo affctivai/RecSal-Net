@@ -30,6 +30,28 @@ Install the requirements by:
 
 > $ pip3 install -r requirements.txt
 
+# Run the code
+
+<pre>
+Project/
+│
+├── dataloader.py
+├── loss.py
+├── model.py
+├── swin_transformer.py
+├── test.py
+├── train.py
+├── utils.py
+├── requirements.txt
+├── swin_small_patch244_window877_kinetics400_1k.pth
+├── saved_models/
+│   └── RecSalNet.pth
+└── data/
+    └── DHF1K/
+        ├── train/
+        └── val/
+</pre>
+
 # Cite
 
 Please cite our paper if you use our code in your own work:
