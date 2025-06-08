@@ -1,6 +1,6 @@
 # RecSal-Net
 
-This is the PyTorch implementation of the EEG-Deformer in our paper:
+This is the PyTorch implementation of the RecSal-Net in our paper:
 
 ChaeEun Woo, SuMin Lee, Soo Min Park, Byung Hyung Kim, "RecSal-Net: Recursive Saliency Network for Video Saliency Prediction", 2025.
 
