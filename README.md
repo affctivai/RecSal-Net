@@ -54,6 +54,14 @@ Project/
 └── swin_small_patch244_window877_kinetics400_1k.pth
 </pre>
 
+You can run the code by:
+> $ python3 train.py
+
+The results will be saved into a folder named saved_models.
+
+After you finished all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics.
+> $ python3 test.py
+
 # Cite
 
 Please cite our paper if you use our code in your own work:
