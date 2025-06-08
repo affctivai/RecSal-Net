@@ -51,14 +51,7 @@ Project/
 ├── train.py
 ├── utils.py
 ├── requirements.txt
-├── swin_small_patch244_window877_kinetics400_1k.pth
-├── saved_models/
-│   └── RecSalNet.pth
-│    
-└── data/
-    └── DHF1K/
-        ├── train/
-        └── val/
+└── swin_small_patch244_window877_kinetics400_1k.pth
 </pre>
 
 # Cite
