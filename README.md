@@ -59,7 +59,7 @@ You can run the code by:
 
 The results will be saved into a folder named saved_models.
 
-After you finished all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics.
+After you finished all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics by:
 > $ python3 test.py
 
 # Cite
