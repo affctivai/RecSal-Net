@@ -35,6 +35,14 @@ Install the requirements by:
 <pre>
 Project/
 │
+├── saved_models/
+│   └── RecSalNet.pth
+│
+├── data/
+│   └── DHF1K/
+│       ├── train/
+│       └── val/
+│
 ├── dataloader.py
 ├── loss.py
 ├── model.py
@@ -46,6 +54,7 @@ Project/
 ├── swin_small_patch244_window877_kinetics400_1k.pth
 ├── saved_models/
 │   └── RecSalNet.pth
+│    
 └── data/
     └── DHF1K/
         ├── train/
