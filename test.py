@@ -135,7 +135,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_path', default='./results', type=str)
     parser.add_argument('--start_idx', default=-1, type=int)
     parser.add_argument('--num_parts', default=4, type=int)
-    parser.add_argument('--path_indata', default='./DHF1K/data/test', type=str)
+    parser.add_argument('--path_indata', default='./data/DHF1K/data/test', type=str)
     parser.add_argument('--clip_size', default=32, type=int)
     args = parser.parse_args()
 
