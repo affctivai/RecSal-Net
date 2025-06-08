@@ -8,7 +8,7 @@ It is a recursive transformer network that combines a transformer-based encoder 
 # Network structure of RecSal-Net
 
 <div align="center">
-<img src="images/Fig1.png" alt="RecSal-Net Architecture" width="600">
+<img src="images/Fig1.png" alt="RecSal-Net structure" width="600">
 
 Fig.1 RecSal-Net structure
 </div>
