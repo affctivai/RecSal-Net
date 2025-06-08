@@ -21,6 +21,7 @@ from utils import *
 from tensorboardX import SummaryWriter
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+print('USE GPU 0')
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--kldiv', default=True, type=bool)
