@@ -1,10 +1,11 @@
 # RecSal-Net
 
-This is the PyTorch implementation of the RecSal-Net in our paper:
+This repository provides the PyTorch implementation of RecSal-Net, introduced in our paper:
 
-ChaeEun Woo, SuMin Lee, Soo Min Park, Byung Hyung Kim, "RecSal-Net: Recursive Saliency Network for Video Saliency Prediction", 2025.
+ChaeEun Woo, SuMin Lee, Soo Min Park, and Byung Hyung Kim,
+“RecSal-Net: Recursive Saliency Network for Video Saliency Prediction,” Neurocomputing, 2025.
 
-It is a recursive transformer network that combines a transformer-based encoder with a recursive feature integration strategy for Video Saliency Prediction (VSP).
+RecSal-Net is a recursive transformer architecture that integrates a transformer-based encoder with a recursive feature integration mechanism, specifically designed for the task of Video Saliency Prediction (VSP).
 
 # Network structure of RecSal-Net
 
@@ -14,11 +15,11 @@ It is a recursive transformer network that combines a transformer-based encoder 
 Fig.1 RecSal-Net structure
 </div>
 
-The overall architecture of RecSal-Net. (a) The RecSal-Net model, including the transformer-based encoder, recursive blocks, and decoder. (b) The recursive block, which iteratively refines multi-scale spatiotemporal features.
+The overall architecture of RecSal-Net. (a) The RecSal-Net model, including a transformer-based encoder, recursive blocks, and a decoder. (b) The recursive block, which iteratively refines multi-scale spatiotemporal features.
 
-# Prepare the python virtual environment
+# Prepare the Python virtual environment
 
-Please create an anaconda virtual environment by:
+Please create an Anaconda virtual environment by:
 
 > $ conda create -n RS python=3 -y
 
@@ -57,9 +58,9 @@ Project/
 You can run the code by:
 > $ python3 train.py
 
-The results will be saved into a folder named saved_models.
+The results will be saved in a folder named saved_models.
 
-After you finished all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics by:
+After you finish all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics by:
 > $ python3 test.py
 
 # Cite
