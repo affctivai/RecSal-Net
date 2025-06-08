@@ -29,3 +29,9 @@ Activate the virtual environment by:
 Install the requirements by:
 
 > $ pip3 install -r requirements.txt
+
+# Cite
+
+Please cite our paper if you use our code in your own work:
+```
+```
