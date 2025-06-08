@@ -16,7 +16,7 @@ from torchvision import transforms, utils
 from os.path import join
 import copy
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 print('USE GPU 0')
 
 
