@@ -18,3 +18,14 @@ The overall architecture of RecSal-Net. (a) The RecSal-Net model, including the 
 
 # Prepare the python virtual environment
 
+Please create an anaconda virtual environment by:
+
+> $ conda create -n RS python=3 -y
+
+Activate the virtual environment by:
+
+> $ conda activate RS
+
+Install the requirements by:
+
+> $ pip3 install -r requirements.txt
