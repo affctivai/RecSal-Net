@@ -21,7 +21,7 @@ The overall architecture of RecSal-Net. (a) The RecSal-Net model, including a tr
 
 Please create an Anaconda virtual environment by:
 
-> $ conda create -n RS python=3 -y
+> $ conda create -n RS python=3.8 -y
 
 Activate the virtual environment by:
 
