@@ -434,7 +434,8 @@ class PatchEmbed3D(nn.Module):
 
         self.in_chans = in_chans
         self.embed_dim = embed_dim
-
+        # 3D convolution layer to convert patches into embedding vectors
+        # Both kernel_size and stride are set to patch_size to create non-overlapping patches
         self.proj = nn.Conv3d(in_chans, embed_dim, kernel_size=patch_size, stride=patch_size)
         if norm_layer is not None:
             self.norm = norm_layer(embed_dim)
@@ -506,6 +507,7 @@ class SwinTransformer3D(nn.Module):
                  use_checkpoint=False):
         super().__init__()
 
+        # Store initialization parameters
         self.pretrained = pretrained
         self.pretrained2d = pretrained2d
         self.num_layers = len(depths)
@@ -554,6 +556,8 @@ class SwinTransformer3D(nn.Module):
         self.init_weights(pretrained=pretrained)
 
     def _freeze_stages(self):
+        """Freeze specified stages to prevent gradient updates during training."""
+        # Freeze patch embedding layer if frozen_stages >= 0
         if self.frozen_stages >= 0:
             self.patch_embed.eval()
             for param in self.patch_embed.parameters():
@@ -568,6 +572,7 @@ class SwinTransformer3D(nn.Module):
                     param.requires_grad = False
 
     def inflate_weights_3D(self):
+        """Load 2D pretrained weights and inflate them to 3D for video processing."""
         checkpoint = torch.load(self.pretrained, map_location='cpu')
         state_dict = checkpoint['state_dict']
         all_keys = [k for k in state_dict.keys()]
