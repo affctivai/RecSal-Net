@@ -298,6 +298,7 @@ class PatchMerging(nn.Module):
         B, D, H, W, C = x.shape
 
         # padding
+        # Add padding if height or width is odd to ensure 2x2 patch extraction
         pad_input = (H % 2 == 1) or (W % 2 == 1)
         if pad_input:
             x = F.pad(x, (0, 0, 0, W % 2, 0, H % 2))
@@ -315,6 +316,7 @@ class PatchMerging(nn.Module):
 
 
 # cache each stage results
+# Cache computation results to avoid recomputing masks for same parameters
 @lru_cache()
 def compute_mask(D, H, W, window_size, shift_size, device):
     img_mask = torch.zeros((1, D, H, W, 1), device=device)  # 1 Dp Hp Wp 1
