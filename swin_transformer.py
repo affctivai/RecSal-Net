@@ -370,6 +370,8 @@ class BasicLayer(nn.Module):
         self.use_checkpoint = use_checkpoint
 
         # build blocks
+        # Build transformer blocks with alternating window patterns
+        # Even-indexed blocks use regular windows, odd-indexed blocks use shifted windows
         self.blocks = nn.ModuleList([
             SwinTransformerBlock3D(
                 dim=dim,
@@ -386,7 +388,7 @@ class BasicLayer(nn.Module):
                 use_checkpoint=use_checkpoint,
             )
             for i in range(depth)])
-
+    # Optional downsampling layer applied at the end of this stage
         self.downsample = downsample
         if self.downsample is not None:
             self.downsample = downsample(dim=dim, norm_layer=norm_layer)
@@ -400,6 +402,7 @@ class BasicLayer(nn.Module):
         # calculate attention mask for SW-MSA
         B, C, D, H, W = x.shape
         window_size, shift_size = get_window_size((D, H, W), self.window_size, self.shift_size)
+        # Change from (B, C, D, H, W) to (B, D, H, W, C)
         x = rearrange(x, 'b c d h w -> b d h w c')
         Dp = int(np.ceil(D / window_size[0])) * window_size[0]
         Hp = int(np.ceil(H / window_size[1])) * window_size[1]
@@ -411,6 +414,8 @@ class BasicLayer(nn.Module):
 
         if self.downsample is not None:
             x = self.downsample(x1)
+        # Rearrange tensors back to channel-first format for next layer
+        # (B, D, H, W, C) -> (B, C, D, H, W)
         x = rearrange(x, 'b d h w c -> b c d h w')
         x1 = rearrange(x1, 'b d h w c -> b c d h w')
         if self.downsample is not None:
@@ -463,7 +468,7 @@ class PatchEmbed3D(nn.Module):
 
 
 class SwinTransformer3D(nn.Module):
-    """ Swin Transformer backbone.
+    """ Swin Transformer backbone for 3D data.
         A PyTorch impl of : `Swin Transformer: Hierarchical Vision Transformer using Shifted Windows`  -
           https://arxiv.org/pdf/2103.14030
 
@@ -578,8 +583,10 @@ class SwinTransformer3D(nn.Module):
         all_keys = [k for k in state_dict.keys()]
         for k in all_keys:
             if "backbone." in k:
+                # Remove 'backbone.' prefix from key names
                 state_dict[k[9:]] = state_dict.pop(k)
             elif "cls_head" in k:
+                # Remove classification head weights as they're task-specific
                 del state_dict[k]
         real_state_dict = self.state_dict()
         full_dict = copy.deepcopy(state_dict)
@@ -588,6 +595,8 @@ class SwinTransformer3D(nn.Module):
                 if full_dict[k].shape != real_state_dict[k].shape:
                     del full_dict[k]
         self.load_state_dict(full_dict, strict=False)
+
+        # Clean up memory
         del checkpoint
         torch.cuda.empty_cache()
 
