@@ -33,6 +33,8 @@ Install the requirements by:
 
 # Run the code
 
+The pre-trained VST parameters are available for download here.
+
 <pre>
 Project/
 │
