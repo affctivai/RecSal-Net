@@ -33,7 +33,7 @@ Install the requirements by:
 
 # Run the code
 
-The pre-trained VST parameters are available for download here.
+Please download the pre-trained VST here and the DHF1K dataset here.
 
 <pre>
 Project/
