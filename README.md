@@ -33,7 +33,7 @@ Install the requirements by:
 
 # Run the code
 
-Please download the pre-trained VST here and the DHF1K dataset here.
+Please download the pre-trained VST [here](https://github.com/Zhongdao/Video-Swin-Transformer) and the DHF1K dataset [here](https://github.com/wenguanwang/DHF1K).
 
 <pre>
 Project/
