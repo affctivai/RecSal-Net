@@ -75,7 +75,7 @@ Please cite our paper if you use our code in your own work:
   journal={Neurocomputing},
   pages = {130822},
   year={2025},
-  vol={650}
+  volume={650}
 }
 
 ```
