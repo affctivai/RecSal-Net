@@ -1,9 +1,10 @@
 # RecSal-Net
 
-This repository provides the PyTorch implementation of RecSal-Net, introduced in our paper:
+This repository provides the official implementation of RecSal-Net, introduced in our paper:
 
 ChaeEun Woo, SuMin Lee, Soo Min Park, and Byung Hyung Kim,
-“RecSal-Net: Recursive Saliency Network for Video Saliency Prediction,” Neurocomputing, 2025.
+“RecSal-Net: Recursive Saliency Network for Video Saliency Prediction,” Neurocomputing, 2025. [[pdf]](https://drive.google.com/file/d/1ORnd-DOUdnswFdbK5MxwNlGsBUKuQLLY) [[link]](https://www.sciencedirect.com/science/article/pii/S0925231225014948) 
+
 
 RecSal-Net is a recursive transformer architecture that integrates a transformer-based encoder with a recursive feature integration mechanism, specifically designed for the task of Video Saliency Prediction (VSP).
 
