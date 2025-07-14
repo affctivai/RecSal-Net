@@ -69,4 +69,13 @@ After you finish all the training processes, you can use test.py to generate the
 
 Please cite our paper if you use our code in your own work:
 ```
+@article{woo2025recsal,
+  title={RecSal-Net: Recursive Saliency Network for video saliency prediction},
+  author={Woo, ChaeEun and Lee, SuMin and Park, Soo Min and Kim, Byung Hyung},
+  journal={Neurocomputing},
+  pages = {130822},
+  year={2025},
+  vol={650}
+}
+
 ```
