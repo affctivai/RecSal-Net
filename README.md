@@ -13,7 +13,7 @@ RecSal-Net is a recursive transformer architecture that integrates a transformer
 <div align="center">
 <img src="./images/Fig1.png" alt="RecSal-Net structure" width=600>
 
-Fig.1 RecSal-Net structure
+Fig.1. RecSal-Net structure
 </div>
 
 The overall architecture of RecSal-Net. (a) The RecSal-Net model, including a transformer-based encoder, recursive blocks, and a decoder. (b) The recursive block, which iteratively refines multi-scale spatiotemporal features.
@@ -67,7 +67,7 @@ After you finish all the training processes, you can use test.py to generate the
 > $ python3 test.py
 
 # Resurt
-Table. 1 Quantitative comparison on DHF1K dataset. The best result is marked in bold.
+Table 1. Quantitative comparison on DHF1K dataset. The best result is marked in bold.
 ||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
 |:-|:-:|:-:|:-:|:-:|:-:|
 |DeepVS|0.856|0.256|0.583|0.344|1.911|
