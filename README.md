@@ -69,7 +69,6 @@ After you finish all the training processes, you can use test.py to generate the
 # Resurt
 Table 1. Quantitative comparison on DHF1K dataset. The best result is marked in bold.
 ||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
-||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
 |:-|:-:|:-:|:-:|:-:|:-:|
 |DeepVS|0.856|0.256|0.583|0.344|1.911|
 |ACLNet|0.890|0.315|0.601|0.434|2.354|
@@ -86,6 +85,44 @@ Table 1. Quantitative comparison on DHF1K dataset. The best result is marked in 
 |STSANet|**0.913**|0.383|0.723|0.529|3.010|
 |GFNet|**0.913**|0.379|0.723|0.529|2.995|
 |**Ours**|**0.913**|0.414|0.728|**0.547**|**3.135**|
+
+Table 2. Quantitative comparison on Hollywood-2 dataset. The best result is marked in bold.
+||AUC_J↑|SIM↑|CC↑|NSS↑|
+|:-|:-:|:-:|:-:|:-:|
+|DeepVS|0.887|0.356|0.446|2.313|
+|ACLNet|0.890|0.542|0.623|3.086|
+|SalEMA|0.919|0.487|0.613|3.186|
+|STRA-Net|0.923|0.487|0.662|3.478|
+|TASED-Net|0.918|0.507|0.646|3.302|
+|Chen et al.|0.928|0.537|0.661|3.804|
+|SalSAC|0.931|0.529|0.670|3.356|
+|UNISAL|0.934|0.543|0.673|3.901|
+|HD2S|0.936|0.551|0.670|3.352|
+|ViNet|0.930|0.550|0.693|3.730|
+|ECANet|0.929|0.526|0.673|3.380|
+|TSFP-Net|0.936|0.571|0.711|3.910|
+|STSANet|**0.938**|0.579|0.721|3.927|
+|GFNet|**0.938**|0.585|0.719|3.952|
+|**Ours**|**0.938**|**0.606**|**0.737**|**4.061**|
+
+Table 3. Quantitative comparison on UCF sports dataset. The best result is marked in bold.
+||AUC_J↑|SIM↑|CC↑|NSS↑|
+|:-|:-:|:-:|:-:|:-:|
+|DeepVS|0.856|0.256|0.583|0.344|
+|ACLNet|0.890|0.315|0.601|0.434|
+|SalEMA|0.890|**0.466**|0.667|0.449|
+|STRA-Net|0.895|0.355|0.663|0.458|
+|TASED-Net|0.895|0.361|0.712|0.470|
+|Chen et al.|0.900|0.353|0.680|0.476|
+|SalSAC|0.896|0.357|0.697|0.479|
+|UNISAL|0.901|0.390|0.691|0.490|
+|HD2S|0.908|0.406|0.700|0.503|
+|ViNet|0.908|0.381|**0.729**|0.511|
+|ECANet|0.903|0.385|0.717|0.500|
+|TSFP-Net|0.912|0.392|0.723|0.517|
+|STSANet|**0.913**|0.383|0.723|0.529|
+|GFNet|**0.913**|0.379|0.723|0.529|
+|**Ours**|**0.913**|**0.414**|**0.547**|**3.135**|
 
 # Cite
 
