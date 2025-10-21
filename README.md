@@ -68,6 +68,7 @@ After you finish all the training processes, you can use test.py to generate the
 
 # Resurt
 ||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
+|----|----|----|----|----|----|
 |DeepVS|0.856|0.256|0.583|0.344|1.911|
 
 # Cite
