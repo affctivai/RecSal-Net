@@ -66,6 +66,10 @@ The results will be saved in a folder named saved_models.
 After you finish all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics by:
 > $ python3 test.py
 
+# Resurt
+||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
+|DeepVS|0.856|0.256|0.583|0.344|1.911|
+
 # Cite
 
 Please cite our paper if you use our code in your own work:
