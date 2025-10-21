@@ -67,7 +67,7 @@ After you finish all the training processes, you can use test.py to generate the
 > $ python3 test.py
 
 # Resurt
-Table 1. Quantitative comparison on DHF1K dataset. The best result is marked in bold.
+Table. 1 Quantitative comparison on DHF1K dataset. The best result is marked in bold.
 ||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
 |:-|:-:|:-:|:-:|:-:|:-:|
 |DeepVS|0.856|0.256|0.583|0.344|1.911|
