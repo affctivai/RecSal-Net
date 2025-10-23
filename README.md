@@ -66,7 +66,7 @@ The results will be saved in a folder named saved_models.
 After you finish all the training processes, you can use test.py to generate the predicted saliency maps and compute all evaluation metrics by:
 > $ python3 test.py
 
-# Resurt
+# Result
 Table 1. Quantitative comparison on DHF1K dataset. The best result is marked in bold.
 ||AUC_J↑|SIM↑|s-AUC↑|CC↑|NSS↑|
 |:-|:-:|:-:|:-:|:-:|:-:|
