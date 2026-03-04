@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: RecSal-Net
+message: "If you use RecSal-Net in your research, please cite the following paper."
+type: software
+authors:
+  - family-names: Kim
+    given-names: Byung Hyung
+    affiliation: Inha University
+
+repository-code: https://github.com/affctivai/RecSal-Net
+license: Apache-2.0
+version: 1.0
+date-released: 2025-01-01
+
+preferred-citation:
+  type: article
+  title: "RecSal-Net: Recursive Saliency Network for Video Saliency Prediction"
+  authors:
+    - family-names: Woo
+      given-names: ChaeEun
+    - family-names: Lee
+      given-names: SuMin
+    - family-names: Park
+      given-names: Soo Min
+    - family-names: Kim
+      given-names: Byung Hyung
+  journal: Neurocomputing
+  volume: 650
+  article-number: 130822
+  year: 2025
