@@ -135,6 +135,11 @@ Please cite our paper if you use our code in your own work:
   pages = {130822},
   year={2025},
   volume={650}
+
+## License
+
+This project is licensed under the Apache License 2.0.
+See the LICENSE file for details.
 }
 
 ```
